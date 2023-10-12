@@ -37,5 +37,9 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "private": true,
-  "name": "dure"
+  "name": "dure",
+  "overrides": {
+    "metro": "0.76.0",
+    "metro-resolver": "0.76.0"
+  }
 }

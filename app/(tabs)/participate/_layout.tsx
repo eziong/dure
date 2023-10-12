@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Stack } from "expo-router";
-import ParticipateHeader from "../../../src/components/participate/header";
+import ParticipateHeader from "@components/participate/header";
 
 type Props = {};
 
