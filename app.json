@@ -1,0 +1,16 @@
+{
+  "expo": {
+   "name": "Dure",
+  //  "icon": "./path/to/your/app-icon.png",
+   "version": "1.0.0",
+   "slug": "rental-people",
+   "ios": {
+     "bundleIdentifier": "come.cobe.dure",
+     "buildNumber": "1.0.0"
+   },
+   "android": {
+     "package": "com.cobe.dure",
+     "versionCode": 1
+   }
+  }
+}
