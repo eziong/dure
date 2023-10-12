@@ -1,17 +1,24 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { Stack } from 'expo-router'
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { Stack } from "expo-router";
+import HomeHeader from "../../../src/components/home/header";
 
-type Props = {}
+type Props = {};
 
 const HomeLayout = (props: Props) => {
   return (
-    <Stack>
-      <Stack.Screen name='index'   />
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen
+        name="index"
+        options={{
+          headerShown: true,
+          header: (props) => <HomeHeader />,
+        }}
+      />
     </Stack>
-  )
-}
+  );
+};
 
-export default HomeLayout
+export default HomeLayout;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
