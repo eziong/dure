@@ -1,16 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import FriendsBody from "@components/friends/body";
 
-type Props = {}
+type Props = {};
 
 const FriendsScreen = (props: Props) => {
-  return (
-    <View>
-      <Text>FriendsScreen</Text>
-    </View>
-  )
-}
+  return <FriendsBody />;
+};
 
-export default FriendsScreen
+export default FriendsScreen;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

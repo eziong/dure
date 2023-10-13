@@ -1,13 +1,16 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import NearBody from "@components/near/body";
 
 type Props = {};
 
-const NearScreen = (props: Props) => {
-  return <NearBody />;
+const PostsHeader = (props: Props) => {
+  return (
+    <View>
+      <Text>PostsHeader</Text>
+    </View>
+  );
 };
 
-export default NearScreen;
+export default PostsHeader;
 
 const styles = StyleSheet.create({});

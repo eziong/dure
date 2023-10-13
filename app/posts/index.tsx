@@ -3,14 +3,14 @@ import React from "react";
 
 type Props = {};
 
-const ParticipateHeader = (props: Props) => {
+const PostsScreen = (props: Props) => {
   return (
     <View>
-      <Text>ParticipateHeader</Text>
+      <Text>PostsScreen</Text>
     </View>
   );
 };
 
-export default ParticipateHeader;
+export default PostsScreen;
 
 const styles = StyleSheet.create({});
