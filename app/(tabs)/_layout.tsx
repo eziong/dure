@@ -26,7 +26,7 @@ const TabsLayout = (props: Props) => {
         }}
       />
       <Tabs.Screen
-        name="near"
+        name="find"
         options={{
           tabBarIcon: ({ focused }) => (
             <MaterialIcon

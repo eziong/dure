@@ -13,31 +13,31 @@ const Menu = (props: Props) => {
   const menuItems = [
     <Pressable onPress={goToLocalFriend} style={styles.iconContainer}>
       <MaterialIcon name="10k" size={48} />
-      <Text>동네 친구</Text>
+      <Text>식사 친구</Text>
     </Pressable>,
     <Pressable onPress={goToLocalFriend} style={styles.iconContainer}>
       <MaterialIcon name="10k" size={48} />
-      <Text>동네 친구</Text>
+      <Text>술 친구</Text>
     </Pressable>,
     <Pressable onPress={goToLocalFriend} style={styles.iconContainer}>
       <MaterialIcon name="10k" size={48} />
-      <Text>동네 친구</Text>
+      <Text>여행 친구</Text>
     </Pressable>,
     <Pressable onPress={goToLocalFriend} style={styles.iconContainer}>
       <MaterialIcon name="10k" size={48} />
-      <Text>동네 친구</Text>
+      <Text>게임 친구</Text>
     </Pressable>,
     <Pressable onPress={goToLocalFriend} style={styles.iconContainer}>
       <MaterialIcon name="10k" size={48} />
-      <Text>동네 친구</Text>
+      <Text>운동 친구</Text>
     </Pressable>,
     <Pressable onPress={goToLocalFriend} style={styles.iconContainer}>
       <MaterialIcon name="10k" size={48} />
-      <Text>동네 친구</Text>
+      <Text>공부 친구</Text>
     </Pressable>,
     <Pressable onPress={goToLocalFriend} style={styles.iconContainer}>
       <MaterialIcon name="10k" size={48} />
-      <Text>동네 친구</Text>
+      <Text>기타</Text>
     </Pressable>,
   ];
 

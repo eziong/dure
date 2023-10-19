@@ -20,9 +20,9 @@ export default HomeHeader;
 
 const styles = StyleSheet.create({
   container: {
-    height: 312,
     borderBottomRightRadius: 18,
     borderBottomLeftRadius: 18,
     backgroundColor: "white",
+    paddingBottom: 32,
   },
 });

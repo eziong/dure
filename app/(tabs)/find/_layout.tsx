@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Stack } from "expo-router";
-import NearHeader from "../../../src/components/near/header";
+import NearHeader from "../../../src/components/find/header";
 
 type Props = {};
 
-const NearLayout = (props: Props) => {
+const FindLayout = (props: Props) => {
   return (
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen
@@ -19,6 +19,6 @@ const NearLayout = (props: Props) => {
   );
 };
 
-export default NearLayout;
+export default FindLayout;
 
 const styles = StyleSheet.create({});

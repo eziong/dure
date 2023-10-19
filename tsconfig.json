@@ -8,7 +8,7 @@
       "@models/*": ["src/models/*"],
       "@redux/*": ["src/redux/*"],
       "@screens/*": ["src/screens/*"],
-      "@interfaces/*": ["src/interfaces/*"],
+      "@classes/*": ["src/classes/*"],
       "@utils/*": ["src/utils/*"]
     }
   },
