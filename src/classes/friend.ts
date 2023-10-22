@@ -1,8 +1,8 @@
-import { Connection } from "./connection";
-import { User } from "./user";
+import { M_Connection } from "./connection";
+import { M_User } from "./user";
 
-export class Friend extends User {
-  connections: Connection[];
+export class M_Friend extends M_User {
+  connections: M_Connection[];
   purpose: number;
 
   constructor({
@@ -10,8 +10,8 @@ export class Friend extends User {
     connections,
     purpose,
   }: {
-    user: User;
-    connections: Connection[];
+    user: M_User;
+    connections: M_Connection[];
     purpose: number;
   }) {
     super(user);

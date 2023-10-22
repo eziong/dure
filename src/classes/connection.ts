@@ -1,4 +1,4 @@
-export class Connection {
+export class M_Connection {
   id: string;
   purpose: number;
   comment: string;

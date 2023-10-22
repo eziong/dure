@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Image } from "expo-image";
-import { Friend } from "@src/classes/friend";
+import { M_Friend } from "@src/classes/friend";
 import { Divider } from "@rneui/themed";
 
 type Props = {
-  friend: Friend;
+  friend: M_Friend;
 };
 
 const FriendItem = ({ friend }: Props) => {

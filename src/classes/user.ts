@@ -1,4 +1,4 @@
-export class User {
+export class M_User {
   id: string;
   nickname: string;
   sex: number;
@@ -30,7 +30,7 @@ export class User {
   }
 }
 
-export class UserOverview {
+export class M_UserOverview {
   id: string;
   nickname: string;
   sex: number;

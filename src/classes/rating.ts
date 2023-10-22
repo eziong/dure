@@ -1,4 +1,4 @@
-export class Rating {
+export class M_Rating {
   id: string;
   user_id: string;
   reviewer_id: string;

@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { PostingOverview } from "@src/classes/posting";
+import { M_PostingOverview } from "@src/classes/posting";
 import { Image } from "expo-image";
 import moment from "moment";
 import MaterialIcon from "@expo/vector-icons/MaterialIcons";
 import { Divider } from "@rneui/themed";
 
 type Props = {
-  postingOverview: PostingOverview;
+  postingOverview: M_PostingOverview;
 };
 
 const PostingOverviewItem = ({ postingOverview }: Props) => {

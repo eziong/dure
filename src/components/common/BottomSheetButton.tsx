@@ -8,17 +8,17 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 import { BottomSheet, Button, ListItem } from "@rneui/themed";
-import { ButtonSheetButton } from "@src/classes/button";
+import { M_BottomSheetButton } from "@src/classes/button";
 
 type Props = {
   title: string;
-  buttons: ButtonSheetButton[];
+  buttons: M_BottomSheetButton[];
   buttonContainer?: StyleProp<ViewStyle>;
 };
 
 const BottomSheetButton = ({ title, buttons, buttonContainer }: Props) => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const [selectedButton, setSelectedButton] = useState<ButtonSheetButton>(
+  const [selectedButton, setSelectedButton] = useState<M_BottomSheetButton>(
     buttons[0]
   );
 

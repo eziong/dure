@@ -1,24 +1,23 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { Button } from "@rneui/themed";
 import BottomSheetButton from "@src/components/common/BottomSheetButton";
-import { ButtonSheetButton } from "@src/classes/button";
+import { M_BottomSheetButton } from "@src/classes/button";
 
 type Props = {};
 
 const FriendsFilter = (props: Props) => {
-  const sortType: ButtonSheetButton[] = [
-    new ButtonSheetButton({
+  const sortType: M_BottomSheetButton[] = [
+    new M_BottomSheetButton({
       key: "recent",
       title: "최근 만난순",
       onPress: () => {},
     }),
-    new ButtonSheetButton({
+    new M_BottomSheetButton({
       key: "connection",
       title: "커넥션",
       onPress: () => {},
     }),
-    new ButtonSheetButton({
+    new M_BottomSheetButton({
       key: "closeArea",
       title: "거리",
       onPress: () => {},

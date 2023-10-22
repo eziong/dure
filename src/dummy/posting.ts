@@ -1,7 +1,7 @@
-import { PostingOverview } from "@src/classes/posting";
-import { Friend } from "@src/classes/friend";
+import { M_PostingOverview } from "@src/classes/posting";
+import { M_Friend } from "@src/classes/friend";
 
-export const postingOverviews: PostingOverview[] = [
+export const postingOverviews: M_PostingOverview[] = [
   {
     id: "posting_0_id",
     nickname: "posting_0_nickname",

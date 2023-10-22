@@ -1,6 +1,6 @@
 import { StyleProp, ViewStyle } from "react-native";
 
-export class ButtonSheetButton {
+export class M_BottomSheetButton {
   key: string;
   title: string | React.ReactElement;
   onPress: () => void;

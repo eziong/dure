@@ -1,9 +1,9 @@
-import { Friend } from "@src/classes/friend";
-import { User } from "@src/classes/user";
+import { M_Friend } from "@src/classes/friend";
+import { M_User } from "@src/classes/user";
 
-export const friends: Friend[] = [
-  new Friend({
-    user: new User({
+export const friends: M_Friend[] = [
+  new M_Friend({
+    user: new M_User({
       id: "user_0_id",
       nickname: "user_0_nickname",
       sex: 1,
@@ -15,8 +15,8 @@ export const friends: Friend[] = [
     connections: [],
     purpose: 0,
   }),
-  new Friend({
-    user: new User({
+  new M_Friend({
+    user: new M_User({
       id: "user_0_id",
       nickname: "user_0_nickname",
       sex: 1,
@@ -28,8 +28,8 @@ export const friends: Friend[] = [
     connections: [],
     purpose: 0,
   }),
-  new Friend({
-    user: new User({
+  new M_Friend({
+    user: new M_User({
       id: "user_0_id",
       nickname: "user_0_nickname",
       sex: 1,
@@ -41,8 +41,8 @@ export const friends: Friend[] = [
     connections: [],
     purpose: 0,
   }),
-  new Friend({
-    user: new User({
+  new M_Friend({
+    user: new M_User({
       id: "user_0_id",
       nickname: "user_0_nickname",
       sex: 1,
@@ -54,8 +54,8 @@ export const friends: Friend[] = [
     connections: [],
     purpose: 0,
   }),
-  new Friend({
-    user: new User({
+  new M_Friend({
+    user: new M_User({
       id: "user_0_id",
       nickname: "user_0_nickname",
       sex: 1,
@@ -67,8 +67,8 @@ export const friends: Friend[] = [
     connections: [],
     purpose: 0,
   }),
-  new Friend({
-    user: new User({
+  new M_Friend({
+    user: new M_User({
       id: "user_0_id",
       nickname: "user_0_nickname",
       sex: 1,
@@ -80,8 +80,8 @@ export const friends: Friend[] = [
     connections: [],
     purpose: 0,
   }),
-  new Friend({
-    user: new User({
+  new M_Friend({
+    user: new M_User({
       id: "user_0_id",
       nickname: "user_0_nickname",
       sex: 1,
@@ -93,8 +93,8 @@ export const friends: Friend[] = [
     connections: [],
     purpose: 0,
   }),
-  new Friend({
-    user: new User({
+  new M_Friend({
+    user: new M_User({
       id: "user_0_id",
       nickname: "user_0_nickname",
       sex: 1,
@@ -106,8 +106,8 @@ export const friends: Friend[] = [
     connections: [],
     purpose: 0,
   }),
-  new Friend({
-    user: new User({
+  new M_Friend({
+    user: new M_User({
       id: "user_0_id",
       nickname: "user_0_nickname",
       sex: 1,
@@ -119,8 +119,8 @@ export const friends: Friend[] = [
     connections: [],
     purpose: 0,
   }),
-  new Friend({
-    user: new User({
+  new M_Friend({
+    user: new M_User({
       id: "user_0_id",
       nickname: "user_0_nickname",
       sex: 1,
@@ -132,8 +132,8 @@ export const friends: Friend[] = [
     connections: [],
     purpose: 0,
   }),
-  new Friend({
-    user: new User({
+  new M_Friend({
+    user: new M_User({
       id: "user_0_id",
       nickname: "user_0_nickname",
       sex: 1,

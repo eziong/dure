@@ -1,4 +1,4 @@
-export class PostingOverview {
+export class M_PostingOverview {
   id: string;
   nickname: string;
   thumbnail: string;
@@ -42,7 +42,7 @@ export class PostingOverview {
   }
 }
 
-export class Posting {
+export class M_Posting {
   id: string;
   userId: string;
   startTime: Date;
