@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Stack } from "expo-router";
-import NearHeader from "../../../src/components/find/header";
+import FindHeader from "../../../src/components/find/header";
 
 type Props = {};
 
@@ -12,7 +12,7 @@ const FindLayout = (props: Props) => {
         name="index"
         options={{
           headerShown: true,
-          header: (props) => <NearHeader />,
+          header: (props) => <FindHeader />,
         }}
       />
     </Stack>

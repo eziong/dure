@@ -4,12 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@app/*": ["app/*"],
-      "@components/*": ["src/components/*"],
-      "@models/*": ["src/models/*"],
-      "@redux/*": ["src/redux/*"],
-      "@screens/*": ["src/screens/*"],
-      "@classes/*": ["src/classes/*"],
-      "@utils/*": ["src/utils/*"]
+      "@src/*": ["src/*"]
     }
   },
   "extends": "expo/tsconfig.base"

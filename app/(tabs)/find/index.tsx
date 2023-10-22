@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import FindBody from "@components/find/body";
+import FindBody from "@src/components/find/body";
 
 type Props = {};
 

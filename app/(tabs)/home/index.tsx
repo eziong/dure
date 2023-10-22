@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import HomeBody from "@components/home/body";
+import HomeBody from "@src/components/home/body";
 
 type Props = {};
 

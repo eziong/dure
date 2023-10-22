@@ -1,24 +1,24 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import React from "react";
-import PostingOverviewItem from "./PostingOverviewItem";
-import { postingOverviews } from "src/dummy/posting";
+import FriendItem from "./FriendItem";
+import { friends } from "src/dummy/friends";
 
 type Props = {};
 
-const PostingOverviewList = (props: Props) => {
+const FriendList = (props: Props) => {
   return (
     <FlatList
       style={styles.container}
-      data={postingOverviews}
+      data={friends}
       renderItem={({ item, index }) => (
-        <PostingOverviewItem postingOverview={item} />
+        <FriendItem key={item.id} friend={item} />
       )}
       keyExtractor={(item, index) => `${index}`}
     />
   );
 };
 
-export default PostingOverviewList;
+export default FriendList;
 
 const styles = StyleSheet.create({
   container: {

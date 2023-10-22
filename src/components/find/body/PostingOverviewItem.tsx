@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { PostingOverview } from "@classes/posting";
+import { PostingOverview } from "@src/classes/posting";
 import { Image } from "expo-image";
 import moment from "moment";
 import MaterialIcon from "@expo/vector-icons/MaterialIcons";
+import { Divider } from "@rneui/themed";
 
 type Props = {
   postingOverview: PostingOverview;
@@ -22,14 +23,22 @@ const PostingOverviewItem = ({ postingOverview }: Props) => {
           </View>
         </View>
         <View style={styles.subtitleContainer}>
-          <MaterialIcon name="star" size={18} style={styles.star} />
-          <Text style={styles.rating}>{postingOverview.averageRating}</Text>
+          <View style={styles.ratingContainer}>
+            <MaterialIcon name="star" size={18} style={styles.star} />
+            <Text style={styles.rating}>{postingOverview.averageRating}</Text>
+          </View>
+          <Divider orientation="vertical" />
           <Text style={styles.timePeriod}>
-            {moment(postingOverview.startTime).format("MM DD || hh")}
+            {moment(postingOverview.startTime).format("YYYY.MM.DD")}
           </Text>
-          <Text style={styles.timePeriod}>
-            {moment(postingOverview.endTime).format("MM DD || hh")}
-          </Text>
+          <Divider orientation="vertical" />
+          <View style={styles.timeContainer}>
+            <Text style={styles.timePeriod}>
+              {`${moment(postingOverview.startTime).format("hh:mm")}~${moment(
+                postingOverview.endTime
+              ).format("hh:mm")}`}
+            </Text>
+          </View>
         </View>
         <View style={styles.descriptionContainer}>
           <Text style={styles.description}>{postingOverview.description}</Text>
@@ -70,39 +79,63 @@ const styles = StyleSheet.create({
 
     elevation: 5,
 
-    margin: 8,
+    marginHorizontal: 8,
+    marginVertical: 4,
   },
-  metaContainer: {},
+  metaContainer: {
+    width: 256,
+  },
   titleContainer: {
     display: "flex",
     flexDirection: "row",
+    paddingBottom: 8,
   },
   purposeContainer: {},
   purpose: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: "500",
   },
   nicknameContainer: {},
   nickname: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: "500",
   },
   subtitleContainer: {
+    width: 224,
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingBottom: 2,
+  },
+  ratingContainer: {
     display: "flex",
     flexDirection: "row",
   },
   star: {
     color: "#eeee00",
   },
-  rating: {},
-  timePeriod: {},
+  rating: {
+    paddingRight: 4,
+  },
+  timeContainer: {
+    display: "flex",
+    flexDirection: "row",
+  },
+  timePeriod: {
+    paddingHorizontal: 4,
+    fontSize: 12,
+  },
   descriptionContainer: {},
-  description: {},
+  description: {
+    fontSize: 11,
+    color: "grey",
+  },
   thumbnailContainer: {},
   thumbnail: {
     flex: 1,
-    width: 128,
-    height: 128,
+    width: 96,
+    height: 96,
     borderRadius: 5,
   },
 });

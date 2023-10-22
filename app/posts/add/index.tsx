@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import PostsBody from "@components/posts/body";
+import PostsBody from "@src/components/posts/body";
 
 type Props = {};
 

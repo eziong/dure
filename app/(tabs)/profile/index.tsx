@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import ProfileBody from "@components/profile/body";
+import ProfileBody from "@src/components/profile/body";
 
 type Props = {};
 

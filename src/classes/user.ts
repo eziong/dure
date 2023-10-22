@@ -24,6 +24,10 @@ export class User {
     this.intro = intro;
     this.images = images;
   }
+
+  getThumbnail() {
+    return this.images.length > 0 ? this.images[0] : "url";
+  }
 }
 
 export class UserOverview {

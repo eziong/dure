@@ -1,5 +1,5 @@
-import { PostingOverview } from "@classes/posting";
-import { Friend } from "src/classes/friend";
+import { PostingOverview } from "@src/classes/posting";
+import { Friend } from "@src/classes/friend";
 
 export const postingOverviews: PostingOverview[] = [
   {

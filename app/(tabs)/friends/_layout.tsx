@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Stack } from "expo-router";
-import FriendsHeader from "@components/friends/header";
+import FriendsHeader from "@src/components/friends/header";
 
 type Props = {};
 

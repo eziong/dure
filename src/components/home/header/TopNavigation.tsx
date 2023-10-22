@@ -1,35 +1,18 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
-import MaterialIcon from "@expo/vector-icons/MaterialIcons";
-import { router } from "expo-router";
-import Badge from "@components/common/Badge";
+import Badge from "@src/components/common/Badge";
+import ChatButton from "@src/components/common/ChatButton";
+import NotificationButton from "@src/components/common/NotificationButton";
 
 type Props = {};
 
 const TopNavigation = (props: Props) => {
-  const onPressGoChatting = () => {
-    router.push("chattings");
-  };
-  const onPressGoNotification = () => {
-    router.push("notifications");
-  };
-
   return (
     <View style={styles.container}>
-      <View />
+      <View style={styles.blank} />
       <View style={styles.iconContainers}>
-        <Pressable onPress={onPressGoChatting} style={styles.iconContainer}>
-          <MaterialIcon name="chat-bubble-outline" size={24} />
-          <Badge value={1} />
-        </Pressable>
-        <Pressable onPress={onPressGoNotification} style={styles.iconContainer}>
-          <MaterialIcon name="notifications-none" size={24} />
-          <Badge
-            containerStyle={styles.badgeContainer}
-            badgeStyle={styles.badge}
-            value={100}
-          />
-        </Pressable>
+        <ChatButton />
+        <NotificationButton />
       </View>
     </View>
   );
@@ -41,10 +24,15 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-between",
     alignItems: "center",
   },
+  blank: {
+    height: 28,
+  },
   iconContainers: {
+    position: "absolute",
+    top: 0,
+    right: 0,
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
@@ -52,11 +40,4 @@ const styles = StyleSheet.create({
     paddingRight: 8,
     paddingTop: 16,
   },
-  iconContainer: {
-    position: "relative",
-    padding: 4,
-    marginLeft: 4,
-  },
-  badgeContainer: {},
-  badge: {},
 });
