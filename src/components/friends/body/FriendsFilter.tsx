@@ -27,7 +27,7 @@ const FriendsFilter = (props: Props) => {
   return (
     <View style={styles.container}>
       <BottomSheetButton
-        title={"title0"}
+        placeholder={"title0"}
         buttons={sortType}
         buttonContainer={styles.buttonContainer}
       />

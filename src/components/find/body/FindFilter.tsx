@@ -91,22 +91,22 @@ const FindFilter = (props: Props) => {
   return (
     <View style={styles.container}>
       <BottomSheetButton
-        title={"title0"}
+        placeholder={"title0"}
         buttons={sortType}
         buttonContainer={styles.buttonContainer}
       />
       <BottomSheetButton
-        title={"title1"}
+        placeholder={"title1"}
         buttons={sexType}
         buttonContainer={styles.buttonContainer}
       />
       <BottomSheetButton
-        title={"title2"}
+        placeholder={"title2"}
         buttons={friendType}
         buttonContainer={styles.buttonContainer}
       />
       <BottomSheetButton
-        title={"title3"}
+        placeholder={"title3"}
         buttons={viewType}
         buttonContainer={styles.buttonContainer}
       />

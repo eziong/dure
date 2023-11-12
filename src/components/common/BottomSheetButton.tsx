@@ -11,16 +11,19 @@ import { BottomSheet, Button, ListItem } from "@rneui/themed";
 import { M_BottomSheetButton } from "@src/classes/button";
 
 type Props = {
-  title: string;
+  placeholder: string;
   buttons: M_BottomSheetButton[];
   buttonContainer?: StyleProp<ViewStyle>;
 };
 
-const BottomSheetButton = ({ title, buttons, buttonContainer }: Props) => {
+const BottomSheetButton = ({
+  placeholder,
+  buttons,
+  buttonContainer,
+}: Props) => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const [selectedButton, setSelectedButton] = useState<M_BottomSheetButton>(
-    buttons[0]
-  );
+  const [selectedButton, setSelectedButton] =
+    useState<M_BottomSheetButton | null>(null);
 
   const onPressVisible = () => {
     setIsVisible(true);
@@ -30,13 +33,18 @@ const BottomSheetButton = ({ title, buttons, buttonContainer }: Props) => {
     setIsVisible(false);
   };
 
+  const getButtonString = () => {
+    if (!selectedButton) return placeholder;
+    return selectedButton.button ? selectedButton.button : selectedButton.title;
+  };
+
   return (
     <View>
       <Pressable
         onPress={onPressVisible}
         style={buttonContainer ? buttonContainer : styles.container}
       >
-        <Text>{selectedButton.title}</Text>
+        <Text>{getButtonString()}</Text>
       </Pressable>
       <BottomSheet isVisible={isVisible} onBackdropPress={onPressInvisible}>
         {buttons.map((button, index) => (
@@ -71,6 +79,17 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     borderWidth: 1,
     borderRadius: 5,
+    padding: 8,
+
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
   },
   buttonContainer: {},
 });
